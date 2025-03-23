@@ -8,6 +8,7 @@ servers:
 paths:
   /:
     get:
+      operationId: calcularTSS
       summary: Enviar datos de entrenamiento a Google Sheets y obtener el resultado final.
       parameters:
         - name: calentamiento
