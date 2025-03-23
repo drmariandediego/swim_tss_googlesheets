@@ -1,0 +1,71 @@
+openapi: 3.0.0
+info:
+  title: TSS Swim Google Sheets
+  description: Calcula el TSS de un entrenamiento de natación usando Google Sheets.
+  version: 1.0.0
+servers:
+  - url: https://script.google.com/macros/s/AKfycbxmnoRjgeGNFyswdKiLbGoq_WmNSlBWb0Smj0s4RDLtYRieVWg31wnMAlx6Gg2B_2mGSw/exec
+paths:
+  /:
+    get:
+      summary: Enviar datos de entrenamiento a Google Sheets y obtener el resultado final.
+      parameters:
+        - name: calentamiento
+          in: query
+          required: true
+          schema:
+            type: number
+          description: Metros nadados en el calentamiento
+        - name: rpe_calentamiento
+          in: query
+          required: true
+          schema:
+            type: number
+          description: RPE del calentamiento
+        - name: aerl
+          in: query
+          required: true
+          schema:
+            type: number
+          description: Metros nadados en la sección AERL
+        - name: rpe_aerl
+          in: query
+          required: true
+          schema:
+            type: number
+          description: RPE de la sección AERL
+        - name: aerm
+          in: query
+          required: true
+          schema:
+            type: number
+          description: Metros nadados en la sección AERM
+        - name: rpe_aerm
+          in: query
+          required: true
+          schema:
+            type: number
+          description: RPE de la sección AERM
+        - name: aeri
+          in: query
+          required: true
+          schema:
+            type: number
+          description: Metros nadados en la sección AERI
+        - name: rpe_aeri
+          in: query
+          required: true
+          schema:
+            type: number
+          description: RPE de la sección AERI
+      responses:
+        '200':
+          description: Resultado final obtenido de la hoja de cálculo
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  resultado_final:
+                    type: number
+                    description: Valor calculado y devuelto desde la celda G21
