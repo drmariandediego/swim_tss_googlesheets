@@ -4,7 +4,7 @@ info:
   description: Calcula el TSS de un entrenamiento de natación usando Google Sheets.
   version: 1.0.0
 servers:
-  - url: https://script.google.com/macros/s/AKfycbxB2vk6krGnMyGKZOHQM33GidKO1TiH8Z4H9MnQwMDJ7lpxh5su1IDBE06p2VfhExZPPA/exec
+  - url: https://script.google.com/macros/s/AKfycbx61Lb6ID1Kxg2NrU1odUMIyB3cQT12OsSJ-Vf_jZSOf9giHAa1x1KQR3nraIptjPeWlw/exec
 paths:
   /:
     get:
