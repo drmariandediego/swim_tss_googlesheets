@@ -4,31 +4,7 @@ info:
   description: Devuelve el valor de la celda G21 de una hoja de cálculo
   version: 1.0.0
 servers:
-  - url: openapi: 3.1.0
-info:
-  title: Leer celda G21
-  description: Devuelve el valor de la celda G21 de una hoja de cálculo
-  version: 1.0.0
-servers:
-  - url: https://script.google.com/macros/s/AKfycbwxC8wzYeyHzQ_CwF_I95WOhkU1ucCXdygdqmovlbbKZisjDOQkSH683pDiAPxoOFJD2w/exec
-paths:
-  /:
-    get:
-      operationId: leerValorG21
-      summary: Leer el contenido de la celda G21
-      parameters: []
-      responses:
-        '200':
-          description: Valor de la celda G21
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  resultado:
-                    type: number
-                    description: Valor leído desde G21
-
+  - url: https://script.google.com/macros/s/AKfycbxmnoRjgeGNFyswdKiLbGoq_WmNSlBWb0Smj0s4RDLtYRieVWg31wnMAlx6Gg2B_2mGSw/exec
 paths:
   /:
     get:
