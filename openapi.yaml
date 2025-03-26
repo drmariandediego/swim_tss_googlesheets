@@ -4,7 +4,7 @@ info:
   description: Devuelve el valor de la celda G21 de una hoja de cálculo
   version: 1.0.0
 servers:
-  - url: https://script.google.com/macros/s/AKfycbxuVupBMqlIrDaOzxN0FKxD-RvGAHL0GGCzl_UfhMhyy89zEealxnTmnx1TPtueoy-SDQ/exec
+  - url: https://script.google.com/macros/s/AKfycbwYalcDtuJOmrJPqadaQRoN8UBfuJAZd9HrQ0QS3pL3gv1Aechzxffoov6dKfNeRQy4/exec
 paths:
   /:
     get:
