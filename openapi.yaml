@@ -1,19 +1,19 @@
 openapi: 3.1.0
 info:
-  title: Leer celda G21
+  title: Leer celda F22
   description: Devuelve el valor de la celda G21 de una hoja de cálculo
   version: 1.0.0
 servers:
-  - url: https://script.google.com/macros/s/AKfycbxmnoRjgeGNFyswdKiLbGoq_WmNSlBWb0Smj0s4RDLtYRieVWg31wnMAlx6Gg2B_2mGSw/exec
+  - url: https://script.google.com/macros/s/AKfycbxuVupBMqlIrDaOzxN0FKxD-RvGAHL0GGCzl_UfhMhyy89zEealxnTmnx1TPtueoy-SDQ/exec
 paths:
   /:
     get:
-      operationId: leerValorG21
-      summary: Leer el contenido de la celda G21
+      operationId: leerValorF22
+      summary: Leer el contenido de la celda F22
       parameters: []
       responses:
         '200':
-          description: Valor de la celda G21
+          description: Valor de la celda F22
           content:
             application/json:
               schema:
@@ -21,4 +21,4 @@ paths:
                 properties:
                   resultado:
                     type: number
-                    description: Valor leído desde G21
+                    description: Valor leído desde F22
